@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  margin: 0;
+  padding: 0;
+}
+
+
+.flex-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color:rgb(24, 12, 36);
+}
+
+.info-input{
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: rgb(128, 130, 155);
+}
+
+.right-login{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(47, 30, 64);
+  width: 330px;
+  height: 400px;
+}
+
+h1{
+  color: greenyellow;
+  font-size: 35px;
+}
+
+input{
+  background-color: rgb(87, 69, 109);
+}
+
+.login-btn{
+  background-color: greenyellow;
+}

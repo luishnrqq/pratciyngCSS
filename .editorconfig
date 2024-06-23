@@ -1,0 +1,9 @@
+# Define o estilo de indentação como 2 espaços
+[*]
+indent_style = space
+indent_size = 2
+
+# Aplica as configurações de indentação ao salvar
+[*.{js,jsx,ts,tsx,css,scss,html,json,yml,yaml}]
+trim_trailing_whitespace = true
+insert_final_newline = true
