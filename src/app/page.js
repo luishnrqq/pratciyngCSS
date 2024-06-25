@@ -4,6 +4,10 @@ export default function Home() {
   return (
     <main>
       <div className="flex-container">
+        <div  className="left-side-login">
+          <h1>Bem vindo ao nosso site</h1>
+          <img src="Users\luisa\Downloads\10248741-removebg-preview.png"  />
+        </div>
         <div className="right-login">
           <h1>LOGIN</h1>
           <div className="info-input">
