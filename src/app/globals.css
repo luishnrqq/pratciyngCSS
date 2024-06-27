@@ -5,21 +5,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap');
 
-:root{
+:root {
   margin: 0;
   padding: 0;
 }
 
-.flex-container{
+
+.flex-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100%;
-  background-color:rgb(24, 12, 36);
+  background-color: rgb(24, 12, 36);
 }
 
-.info-input{
+.info-input {
   display: flex;
   flex-direction: column;
   padding-top: 15px;
@@ -27,18 +28,38 @@
   color: rgb(128, 130, 155);
 }
 
-.right-login{
+.right-login {
   flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgb(47, 30, 64);
   width: 380px;
-  height: 310px;
+  height: 430px;
   border-radius: 5%;
+  position: relative;
 }
 
-h1{
+
+.cadastro-container {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(47, 30, 64);
+  width: 380px;
+  height: 450px;
+  border-radius: 5%;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.cadastro-container-active{
+  transform: translateY(0);
+}
+
+h1 {
   color: rgb(0, 247, 120);
   font-size: 35px;
   font-weight: bold;
@@ -46,7 +67,7 @@ h1{
   font-family: sans-serif;
 }
 
-input{
+input {
   background-color: rgb(87, 69, 109);
   width: 100%;
   height: 40px;
@@ -55,7 +76,7 @@ input{
   padding: 8px;
 }
 
-.login-btn{
+.login-btn {
   width: 235px;
   height: 40px;
   border: none;
@@ -70,7 +91,7 @@ input{
 }
 
 
-.left-side-login{
+.left-side-login {
   display: flex;
   flex-direction: column;
   width: 50vw;
@@ -78,3 +99,17 @@ input{
   align-items: center;
   justify-content: center;
 }
+
+
+.info-input-register {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: rgb(128, 130, 155);
+}
+
+#chk{
+  display: none;
+}
+
