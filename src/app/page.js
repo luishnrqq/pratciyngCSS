@@ -26,8 +26,9 @@ export default function Home() {
           <input type="password" placeholder="******" />
         </div>
         <button className="login-btn">Entrar</button>
+        <button onClick={handleCadastroClick}>Cadastrar</button>
         <div className={cadastroVisible ? "cadstro-conatiner cadastro-container-active" : "cadastro-container"} >
-          <label htmlFor="chk" aria-hidden="true" onClick={handleCadastroClick} >CADASTRO</label>
+          <label htmlFor="chk" aria-hidden="true"  >CADASTRO</label>
           <div className="info-input-register">
             <label>Nome completo</label>
             <input type="text" placeholder="Nome Completo" />
