@@ -15,7 +15,7 @@ export default function Home() {
       <div className="left-side-login">
         <h1>Bem vindo ao nosso site</h1>
       </div>
-      <div className="right-login">
+      <form className={cadastroVisible ?  "right-login  " : "right-login right-login-active"}>
         <h1 >LOGIN</h1>
         <div className="info-input">
           <label for="usuario">Usuário</label>
@@ -26,9 +26,8 @@ export default function Home() {
           <input type="password" placeholder="******" />
         </div>
         <button className="login-btn">Entrar</button>
-        <button onClick={handleCadastroClick}>Cadastrar</button>
         <div className={cadastroVisible ? "cadstro-conatiner cadastro-container-active" : "cadastro-container"} >
-          <label htmlFor="chk" aria-hidden="true"  >CADASTRO</label>
+          <label htmlFor="chk" aria-hidden="true" onClick={handleCadastroClick}  >CADASTRO</label>
           <div className="info-input-register">
             <label>Nome completo</label>
             <input type="text" placeholder="Nome Completo" />
@@ -49,7 +48,7 @@ export default function Home() {
             <button className="login-btn">Cadastrar</button>
           </div>
         </div>
-      </div>
+      </form>
     </div>
 
   );

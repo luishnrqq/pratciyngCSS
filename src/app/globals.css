@@ -37,13 +37,12 @@
   width: 380px;
   height: 430px;
   border-radius: 5%;
-  position: relative;
 }
 
 
 .cadastro-container {
-  display: none;
-  position: absolute;
+  display: flex;
+  position:   absolute;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -51,12 +50,15 @@
   width: 380px;
   height: 450px;
   border-radius: 5%;
-  transform: translateY(100%);
-  transition: transform 0.3s ease;
+  transform: translateY(90%);
+  transition: transform 0.3s ease-in;
+  clip-path: polygon(0 0, 100% 0, 100% 12%, 0 12%);;
 }
 
 .cadastro-container-active{
   transform: translateY(0);
+  transition: transform 0.3s ease-out;
+  position: absolute;
 }
 
 h1 {
